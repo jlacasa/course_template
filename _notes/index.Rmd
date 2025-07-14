@@ -1,7 +1,7 @@
 --- 
-title: "STAT 720 - Design of Experiments"
+title: "STAT NNN - Design of Experiments"
 author: "Josefina Lacasa"
-date: Summer 2025 #"`r Sys.Date()`"
+date: Semester Year #"`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
 
@@ -15,21 +15,21 @@ June 9th, 2025
 
 ```{r message=F, warning=FALSE}
 library(tidyverse)
-read.csv("../../students_STAT_720_C.csv") %>% 
-  ggplot(aes(x = degreeProgram))+
-  geom_bar(fill = "#B388EB")+
-  theme_bw()+
-  theme(panel.grid.minor = element_blank(),
-        panel.border = element_blank(),
-        axis.title.x = element_blank(), 
-        axis.text.x = element_text(angle = 50, vjust = 1, hjust=1))
+# read.csv("../../students_STAT_720_C.csv") %>% 
+#   ggplot(aes(x = degreeProgram))+
+#   geom_bar(fill = "#B388EB")+
+#   theme_bw()+
+#   theme(panel.grid.minor = element_blank(),
+#         panel.border = element_blank(),
+#         axis.title.x = element_blank(), 
+#         axis.text.x = element_text(angle = 50, vjust = 1, hjust=1))
 ```
 
 - In rounds: What's your major, what do you expect to learn?  
 
 ### Logistics  
 
-- [Website](https://stat720.github.io/summer2025)
+- [Website](#)
 - Syllabus
 - Statistical programming requirements  
 - Rough mindmap of the course (on whiteboard)  
@@ -54,42 +54,6 @@ By the end of this course, you should be able to:
 - matrices: $\mathbf{X}$, $\Sigma$  
 - probability distribution: $y \sim N(0, \sigma^2)$, $\mathbf{y} \sim N(\boldsymbol{0}, \sigma^2\mathbf{I})$.     
 
-## Why do designed experiments exist?  
-
-### Example  
-
-You want to bake cookies with a certain diameter (to fit the box) and are not sure about the amount of baking powder vs. baking soda. 
-
-- more baking powder = smaller, more cakey cookies   
-- more baking soda = larger, crispier cookies  
-
-How can we estimate the cookie diameter 
-
-> **Case A:**   
-> Bake 3 cookies, each with a different levels of baking powder:baking soda ratio.
-> 
-> **Case B:**   
-> - On Monday: Bake 3 cookies, each with a different levels of baking powder:baking soda ratio.     
-> - On Tuesday: Bake 3 cookies, each with a different levels of baking powder:baking soda ratio.     
-> - On Wednesday: Bake 3 cookies, each with a different levels of baking powder:baking soda ratio.     
-> 
-> **Case C:**   
-> - On Monday: Bake 3 cookies with the first level of baking powder:baking soda ratio.     
-> - On Tuesday: Bake 3 cookies with the second level of baking powder:baking soda ratio.     
-> - On Wednesday: Bake 3 cookies with the third level of baking powder:baking soda ratio.     
-> 
-> Group discussion: which is preferrable?  
-
-
-## The golden rules of designed experiments  
-
-- Randomization  
-- Replication  
-- Local control  
-
-## Other concepts in designed experiments  
-- Experimental unit: smallest unit to which a treatment is independently assigned/applied. 
-- Observational unit: smallest unit on which observations are made. 
 
 ## For tomorrow    
 
