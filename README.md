@@ -8,7 +8,7 @@ seo:
   name: STAT 800
 ---
 
-STAT 800 - Course Name
+STAT 800 - Course Name  
 Summer 2025   
 Kansas State University
 
